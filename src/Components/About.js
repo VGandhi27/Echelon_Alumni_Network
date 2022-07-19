@@ -5,6 +5,11 @@ import ci2 from './images/ci2.jpg'
 import ci3 from './images/ci3.jpg'
 import slide2 from './images/slide2.jpg'
 import slide3 from './images/slide3.jpg'
+import iconig from './images/icons8-instagram-50.png'
+import iconfb from './images/icons8-facebook-50.png'
+import iconln from './images/icons8-linkedin-50.png'
+import icontw from './images/icons8-twitter-50.png'
+import iconyt from './images/icons8-youtube-50.png'
 
 
 export default function About() {
@@ -233,9 +238,23 @@ export default function About() {
  </div>
 {/*---------Contact Section-----------*/}
 <div className="row">
-<div className="col-sm-12">
-  </div>         
-         </div>
+        <div className="col-sm-12">
+        <h1>Contact Us</h1>
+        <div className="container container my-5">
+        <p>
+         <a href="https://www.facebook.com/EchelonInstituteOfTechnologyOfficial" className='mx-3'> <img src={iconfb} alt="" /></a>
+         <a href="https://www.instagram.com/echeloninstituteoftechnology/" className='mx-3'> <img src={iconig} alt="" /></a>
+         <a href="https://www.linkedin.com/school/echelon-institute-of-technology/" className='mx-3'> <img src={iconln} alt="" /></a>
+         <a href="https://twitter.com/eitfbdofficial" className='mx-3'> <img src={icontw} alt="" /></a>
+         <a href="https://www.youtube.com/channel/UCYUk-0QqiX2Ae3k1as0m3Jw" className='mx-3'> <img src={iconyt} alt="" /></a>
+
+        </p>
+        </div>
+        
+       
+        </div>         
+  </div>
+
     </div>
 {/*----------Footer Section------------*/}
 <div className="row">
