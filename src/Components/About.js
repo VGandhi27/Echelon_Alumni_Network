@@ -12,6 +12,7 @@ import icontw from './images/icons8-twitter-50.png'
 import iconyt from './images/icons8-youtube-50.png'
 
 
+
 export default function About() {
   return (
 <>
@@ -181,13 +182,14 @@ export default function About() {
     <div className="col-sm-6">
       <h3 className='my-3'>Young Achievers Awards</h3>
       <p>YAA (Young Achievers Awards) are given to those alumni who have brought laurels to the Institute by contributing to society and for their academic excellence. The awards are given during the Institute foundation function. Any alumni who have not received the award earlier and who are 35 years of age or under, can also self-nominate for the award. However, nominations can be made for outstanding achievements under the following categories:
+      </p>
         <ul>
           <li>Academic excellence</li>
           <li>Professional excellence</li>
           <li>Entrepreneurship and Management</li>
           <li>Any other activity pertaining to the service of Humanity at large</li>
         </ul>
-      </p>
+     
     
     </div>
  {/*----------Alumni Meets and Re-union-----------*/}
@@ -236,6 +238,19 @@ export default function About() {
   </div>
   </div>
  </div>
+{/*----------Media Section------------*/}
+<div className="media">
+  <div className="row">
+    <h1 className='mx-3 my-4'>Media</h1>
+    <div className="col-sm-4">
+      
+    </div>
+    
+    <div className="col-sm-4"></div>
+    <div className="col-sm-4"></div>
+
+  </div>
+</div>
 {/*---------Contact Section-----------*/}
 <div className="row">
         <div className="col-sm-12">

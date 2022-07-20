@@ -1,0 +1,25 @@
+.containers {
+    position: relative;
+    color: rgb(255, 255, 255);
+    
+    /*Note, you can change the color to your choice depending on your 
+    image and what color blends with it*/
+}
+
+.containers::after {
+    content: "";
+    opacity: 2;
+    background: rgb(1, 12, 32) url("images/slide5.jfif") no-repeat fixed top;
+    background-blend-mode: luminosity;
+    /* also change the blend mode to what suits you, from darken, to other 
+    many options as you deem fit*/
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+    height:initial;
+    color: rgb(255, 255, 255);
+}
