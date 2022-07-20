@@ -95,11 +95,11 @@ export default function Form() {
 </div>
 
 {/*--------Faculty Form-------*/}
-<div className="facultyForm pt-5">
-<div className="container pt-5">
-    <div className="row pt-5">
-        <div className="col-12 pt-5">
-        <h1>Faculty Form</h1>           
+<div className="facultyForm pb-5">
+<div className="container pb-5">
+    <div className="row ">
+        <div className="col-12 pb-5">
+        <h1 className='pb-5'>Faculty Form</h1>           
         <div className="d-grid gap-4 col-8 mx-auto my-auto ">
             <form>
             <div className="mb-3">
