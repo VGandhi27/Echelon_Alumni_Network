@@ -1,9 +1,10 @@
 import React from 'react'
+import MembershipCard from './Components/MembershipCard'
 
 
 
 import Navbar from './Components/Navbar'
-import PostDiscussion from './Components/PostDiscussion'
+
 
 
 
@@ -13,8 +14,8 @@ export default function App() {
   return (
     <>
     <Navbar/>
+    <MembershipCard/>
     
-    <PostDiscussion/>
     </>
   )
 }
