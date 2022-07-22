@@ -1,8 +1,10 @@
 import React from 'react'
-import More from './Components/More'
+
 
 
 import Navbar from './Components/Navbar'
+import PostDiscussion from './Components/PostDiscussion'
+
 
 
 
@@ -11,7 +13,8 @@ export default function App() {
   return (
     <>
     <Navbar/>
-    <More/>
+    
+    <PostDiscussion/>
     </>
   )
 }
