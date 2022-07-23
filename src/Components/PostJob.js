@@ -6,7 +6,7 @@ export default function PostJob() {
     <>
  
     <div className="containers">
-        <div className="container  pt-5 pb-5 ">
+        <div className="container ">
             <div className="row">
                 <div className="col-sm-8">
                 <form>

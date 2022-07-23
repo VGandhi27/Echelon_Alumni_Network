@@ -1,35 +1,85 @@
 import React from 'react'
 import './Elements.css';
+import { Link } from 'react-router-dom'
 
 export default function SideNavbar() {
   return (
-    <div className="containers pt-2 pb-5">
-      <div className="container">
+    <>
+    <div className="contain pt-2 ">
         <div className="row">
-          <div className="col-sm-3 ">
-                  <div className="d-flex align-items-start">
-                      <div className="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical" style={{color:"white"}}>
-                        <button className="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" style={{color:"white"}} type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Post Discussion</button>
-                        <button className="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" style={{color:"white"}} type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Career Center</button>
-                        <button className="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" style={{color:"white"}} type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">My Groups</button>
-                        <button className="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"style={{color:"white"}} type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">View Jobs</button>
-                        <button className="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" style={{color:"white"}}type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Post Jobs</button>
-                        <button className="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" style={{color:"white"}}type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Membership Card </button>
-                        <button className="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" style={{color:"white"}}type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Post Internship</button>
-                        <button className="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" style={{color:"white"}}type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Update Profile</button>
-                        <button className="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" style={{color:"white"}}type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Create Group</button>
-                        <button className="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" style={{color:"white"}} type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Create Events</button>
-                        <button className="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" style={{color:"white"}} type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Home</button>
-                        <button className="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" style={{color:"white"}} type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Members</button>
-                        <button className="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" style={{color:"white"}} type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Messages</button>
-                        <button className="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" style={{color:"white"}} type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">More</button>
-                      </div>
-                      
-        </div>
-          </div>
-        </div>
+        <nav className="navbar navbar-dark bg-dark ">
+  <div className="container-fluid">
+    <Link className="navbar-brand" to="#">Features</Link>
+    <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div className="offcanvas-header">
+        <h5 className="offcanvas-title" id="offcanvasDarkNavbarLabel">Features</h5>
+        <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
+      <div className="offcanvas-body">
+        <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/careerCenter">Career Center</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/membershipCard">MemberShip Card</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/updateProfile">Update Profile</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/notification">Notification</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/events">Events</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/createEvents">Create Events</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/createGroups">Create Groups </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/Members">Members </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="#">Messages </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="#">Meet Ups </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link active" aria-current="page" to="/more">More</Link>
+          </li>
+        
+          <li className="nav-item dropdown">
+            <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Post
+            </Link>
+            <ul className="dropdown-menu dropdown-menu-dark">
+              <li><Link className="dropdown-item" to="/postJob">Job</Link></li>
+              <li><Link className="dropdown-item" to="/postDiscussion">Discussion</Link></li>
+              <li>
+                <hr className="dropdown-divider"/>
+              </li>
+              <li><Link className="dropdown-item" to="/postInternship">Internship</Link></li>
+            </ul>
+          </li>
+        </ul>
+        <form className="d-flex" role="search">
+          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <button className="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+      
+        </div>
       
     </div>
+    </>
     )
 }
