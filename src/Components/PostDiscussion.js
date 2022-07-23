@@ -14,7 +14,7 @@ export default function PostDiscussion() {
                     
                     </div>
                     <div className="row">
-                <div className="col-sm-4">
+                <div className="col-sm-6">
                 <select className="form-select form-select-sm" aria-label=".form-select-sm example">
                     <option s>Cattegories</option>
                     <option value="1">Looking for a Job</option>
@@ -34,7 +34,7 @@ export default function PostDiscussion() {
 
 
                     </select></div>   
-                    <div className="col-sm-5">
+                    <div className="col-sm-6">
                     <select className="form-select form-select-sm" aria-label=".form-select-sm example">
                     <option selected>Groups</option>
                     <option value="1">Visible to all Members</option>
@@ -45,12 +45,18 @@ export default function PostDiscussion() {
                     <option value="3">Study Abroad Support Center</option>
                     </select>
                         </div> 
-                        <div className="col-sm-2 pb-5">
-                        <input type="radio" className="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked/>
-                        <label className="btn btn-outline-success" for="success-outlined">Images</label>
+                     
+                        </div>
 
-                        </div>
-                        </div>
+<div className="row pb-1 pt-3">
+    <div className="col-sm-12">
+    <div className="mb-3">
+  <label for="formFileSm" className="form-label">Insert Images</label>
+  <input className="form-control form-control-sm" id="formFileSm" type="file"/>
+</div>
+    </div>
+</div>
+
                         <div className="row pb-5 pt-5">
                             <div className="col-sm-12">
                             <div className="d-grid gap-2 col-6 mx-auto">
