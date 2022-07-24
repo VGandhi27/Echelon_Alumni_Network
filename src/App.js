@@ -18,11 +18,14 @@ import CreateGroup from './Components/CreateGroup'
 import CareerCenter from './Components/CareerCenter'
 import SideNavbar from './Components/SideNavbar'
 import MyGroup from './Components/MyGroup'
+import Message from './Components/Message'
+
 
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
  
 } from "react-router-dom";
 
@@ -81,6 +84,9 @@ export default function App() {
           <Route exact path="/events">
             <Events />
           </Route>
+          <Route exact path="/">
+            <About />
+          </Route>
 
           <Route exact path="/members">
             <Members />
@@ -93,7 +99,10 @@ export default function App() {
           <Route exact path="/postJob">
             <PostJob />
           </Route>
-                 
+
+          <Route exact path="/message">
+            <Message />
+          </Route> 
         </Switch>
         </Router>
     </>

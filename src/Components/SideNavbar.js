@@ -1,6 +1,6 @@
 import React from 'react'
 import './Elements.css';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 export default function SideNavbar() {
   return (
@@ -9,7 +9,7 @@ export default function SideNavbar() {
         <div className="row">
         <nav className="navbar navbar-dark bg-dark ">
   <div className="container-fluid">
-    <Link className="navbar-brand" to="#">Features</Link>
+    <Link className="navbar-brand" to="/">Features</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -21,7 +21,7 @@ export default function SideNavbar() {
       <div className="offcanvas-body">
         <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="/careerCenter">Career Center</Link>
+            <Link to="/careerCenter" className="nav-link active" aria-current="page" >Career Center</Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link active" aria-current="page" to="/membershipCard">MemberShip Card</Link>
@@ -45,10 +45,10 @@ export default function SideNavbar() {
             <Link className="nav-link active" aria-current="page" to="/Members">Members </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="#">Messages </Link>
+            <Link className="nav-link active" aria-current="page" to="/message">Messages </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="#">Meet Ups </Link>
+            <Link className="nav-link active" aria-current="page" to="/meetUps">Meet Ups </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link active" aria-current="page" to="/more">More</Link>
