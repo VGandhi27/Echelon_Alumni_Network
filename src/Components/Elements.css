@@ -29,3 +29,6 @@
 h1{
     text-align: center;
 }
+.modalfade,.modal-dialog,.modal-body,.modal-header{
+    color: black;
+}
