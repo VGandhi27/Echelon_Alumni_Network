@@ -8,6 +8,7 @@ export default function PostInternship() {
     <div className="containers">
         <div className="container  pt-5 pb-5 ">
             <div className="row">
+                <div className="col-sm-2"></div>
                 <div className="col-sm-8">
                 <form>
                 <h1 className='my-3'>Post Internship</h1>
@@ -53,7 +54,7 @@ export default function PostInternship() {
                     <label for="text" className="col-form-label">Internship Description </label>
                 </div>
                 <div className="col-auto">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
    
             <button type="submit" className="btn btn-primary my-3">Post</button>

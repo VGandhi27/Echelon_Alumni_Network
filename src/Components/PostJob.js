@@ -8,6 +8,7 @@ export default function PostJob() {
     <div className="containers">
         <div className="container ">
             <div className="row">
+                <div className="col-sm-2"></div>
                 <div className="col-sm-8">
                 <form>
                 <h1 className='my-3'>Post Job</h1>
@@ -61,7 +62,7 @@ export default function PostJob() {
                     <label for="text" className="col-form-label">Job Description </label>
                 </div>
                 <div className="col-auto">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>                </div>
+                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>                </div>
    
             <button type="submit" className="btn btn-primary my-3">Post</button>
             </form>

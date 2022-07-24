@@ -7,6 +7,7 @@ export default function PostDiscussion() {
    <div className="containers">
     <div className="container pb-5 pt-5">
         <div className="row">
+            <div className="col-sm-2"></div>
             <div className="col-sm-7">
                 <h1>Post Discussion </h1>
                    <div className="mb-3">
