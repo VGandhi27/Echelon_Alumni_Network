@@ -1,5 +1,4 @@
-import React, { Component } from 'react'
-
+import React from 'react'
 import GoogleLogin from 'react-google-login'
 import slide4 from './images/slide1.jpg'
 import ci1 from './images/ci1.png'
@@ -15,7 +14,7 @@ import iconyt from './images/icons8-youtube-50.png'
 
  
 
-export default class google extends Component {
+export default function About() {
  
 
   responseGoogle=(response)=>{
@@ -23,7 +22,7 @@ export default class google extends Component {
    console.log(response.profileObj);
    
   }
-  render(){
+  
  return (
 <>
 <hr className="text-danger border-2 opacity-50 width-10px"/>
@@ -73,6 +72,7 @@ export default class google extends Component {
                       onFailure={this.responseGoogle}
                       cookiesPolicy={'single_host_origin'}
                       />
+                    <button className="btn btn-danger mb-2" type="button">Connect with Google</button>
                     <button className="btn btn-info mb-2" type="button">Connect with Linkedin</button>
                     <button className="btn btn-primary mb-2" type="button">Connect with FaceBook</button>
                     <button type="submit" className="btn btn-success">SignUp with Email</button>
@@ -295,5 +295,5 @@ export default class google extends Component {
   </div>         
   </div>
     </>
-  )}
+  )
 }

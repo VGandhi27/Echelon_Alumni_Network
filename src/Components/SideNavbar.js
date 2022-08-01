@@ -32,13 +32,7 @@ export default function SideNavbar() {
           <li className="nav-item">
             <Link className="nav-link active" aria-current="page" to="/notification">Notification</Link>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="/events">Events</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="/createEvents">Create Events</Link>
-          </li>
-          <li className="nav-item">
+                   <li className="nav-item">
             <Link className="nav-link active" aria-current="page" to="/createGroups">Create Groups </Link>
           </li>
           <li className="nav-item">
@@ -69,8 +63,9 @@ export default function SideNavbar() {
           </li>
         </ul>
         <form className="d-flex" role="search">
-          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          <input className="form-control me-2 form-label" htmlfor="exampleDataList" type="search" placeholder="Search" aria-label="Search"/>
           <button className="btn btn-success" type="submit">Search</button>
+          
         </form>
       </div>
     </div>
