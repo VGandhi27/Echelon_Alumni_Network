@@ -11,7 +11,7 @@
 - [Contact](#contact)
 
 ## <p id="general_info">General Info</p>
- The main aim of the project is to develop a web-based application that is going to make it possible for the former students of College to keep in touch with each other and that will substitute the manual system of the alumni office with an automated one. 
+The project's main aim is to develop a web-based application that will make it possible for the former students of the College to keep in touch with each other and that will substitute the manual system of the alumni office with an automated one.
 
 - This project aims to create three interfaces that is Alumni, Student and Faculty
 - Alumni Interface- Used to create an interface where the Alumni can post Jobs,Internships,can create different groups and also be in touch with the college etc
